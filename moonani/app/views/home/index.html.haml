@@ -1,0 +1,120 @@
+%section#home
+	.container-fluid
+		.row
+			.col-xs-6.col-md-8
+				.quote_of_the_day
+					%h2.text-center
+						" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque veniam nostrum architecto amet quam incidunt quo, sapiente et accusantium totam suscipit repellat voluptatibus vero rerum nulla harum dolores facere! "
+				%ul.cards
+					%li
+						%a.link-card{:href => "#home"}
+							.card
+								.side.front
+									= image_tag "icon-home.svg"
+									.title
+										Inicio
+								.side.back
+									.rotation
+										.moon
+											.full
+											.empty
+								.side
+								.side
+								.side
+								.side
+					%li
+						%a.link-card{:href => "#blog"}
+							.card
+								.side.front
+									= image_tag "icon-blog.svg"
+									.title
+										Blog
+								.side.back
+									.rotation
+										.moon
+											.full
+											.empty
+								.side
+								.side
+								.side
+								.side
+					%li
+						%a.link-card{:href => "#news"}
+							.card
+								.side.front
+									= image_tag "icon-news.svg"
+									.title
+										News
+								.side.back
+									.rotation
+										.moon
+											.full
+											.empty
+								.side
+								.side
+								.side
+								.side
+					%li
+						%a.link-card{:href => "#testimonials"}
+							.card
+								.side.front
+									= image_tag "icon-testimonials.svg"
+									.title
+										Testimonios
+								.side.back
+									.rotation
+										.moon
+											.full
+											.empty
+								.side
+								.side
+								.side
+								.side
+					%li
+						%a.link-card{:href => "#contact"}
+							.card
+								.side.front
+									= image_tag "icon-contact.svg"
+									.title
+										Contactanos
+								.side.back
+									.rotation
+										.moon
+											.full
+											.empty
+								.side
+								.side
+								.side
+								.side
+				%a.button{:href => "#"}
+					Agendar consulta
+			.col-xs-6.col-md-4
+				.calendar
+					.event
+						.banner
+							.date 24 de Septiembre
+							.location Jardines La Estancia
+							.icon
+								= image_tag "icon-conference.svg"
+						.content
+							.title "Mujer Positiva"
+							.description
+								Crea rutinas prácticas para llenarte de energía motivante, dejando atras los malos hábitos y la negatividad.
+							%a.button{:href => "#"}
+								Quiero asistir
+					.event
+						.banner
+							.date 2 de Octubre
+							.location Quinta La Esmeralda
+							.icon
+								= image_tag "icon-taller.svg"
+						.content
+							.title "El Tercer Ojo"
+							.description
+								Observa todo en 4D, ve a tus enemigos antes que ellos a ti, y cometelos.
+							%a.button{:href => "#"}
+								Quiero asistir
+%section#blog
+%section#news
+%section#testimonials
+%section#contact
