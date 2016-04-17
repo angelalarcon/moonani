@@ -1,13 +1,13 @@
 %section#home
 	.container-fluid
 		.row
-			.col-xs-6.col-md-8
+			.col-xs-12.col-sm-6.col-md-8
 				.quote_of_the_day
 					%h2.text-center
 						" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque veniam nostrum architecto amet quam incidunt quo, sapiente et accusantium totam suscipit repellat voluptatibus vero rerum nulla harum dolores facere! "
-				%ul.cards
-					%li
-						%a.link-card{:href => "#home"}
+				%ul.cards.nav
+					%li.active
+						%a{:href => "#home", class: "link-card"}
 							.card
 								.side.front
 									= image_tag "icon-home.svg"
@@ -23,7 +23,7 @@
 								.side
 								.side
 					%li
-						%a.link-card{:href => "#blog"}
+						%a{:href => "#blog", class: "link-card"}
 							.card
 								.side.front
 									= image_tag "icon-blog.svg"
@@ -39,7 +39,7 @@
 								.side
 								.side
 					%li
-						%a.link-card{:href => "#news"}
+						%a{:href => "#news", class: "link-card"}
 							.card
 								.side.front
 									= image_tag "icon-news.svg"
@@ -55,7 +55,7 @@
 								.side
 								.side
 					%li
-						%a.link-card{:href => "#testimonials"}
+						%a{:href => "#testimonials", class: "link-card"}
 							.card
 								.side.front
 									= image_tag "icon-testimonials.svg"
@@ -71,7 +71,7 @@
 								.side
 								.side
 					%li
-						%a.link-card{:href => "#contact"}
+						%a{:href => "#contact", class: "link-card"}
 							.card
 								.side.front
 									= image_tag "icon-contact.svg"
@@ -88,7 +88,7 @@
 								.side
 				%a.button{:href => "#"}
 					Agendar consulta
-			.col-xs-6.col-md-4
+			.col-xs-12.col-sm-6.col-md-4
 				.calendar
 					.event
 						.banner

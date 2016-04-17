@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  $('#my_scrollspy').scrollspy({
+    offset: $('header').innerHeight() + 30
+  });  
+  
   // Add scrollspy to <body>
   $('body').scrollspy({target: "header", offset: 110});   
 
